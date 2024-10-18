@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 42%, rgba(39,91,30,1) 74%, rgba(0,215,255,0.8715861344537815) 90%);
+    height: 100vh;
+   
+}
+body >span{
+    color: white;
+}
+.from_to{
+    background: rgba(2, 0, 36, 0.418);
+    width: 400px;
+    height: 75vh;
+    border: 2px solid wheat ;
+    border-radius: 10px;
+}
+h1{
+    padding: 10px 50px;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+span{
+    color: rgba(255, 255, 255, 0.602);
+}
+.combine{
+    width: 95%;
+    height:40%;
+}
+.cntry_name{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cntry_name > span{
+    font-size: x-large;
+}
+select{
+    color:white;
+    background-color:rgb(0 0 0 / 0%);
+    font-size: x-large;
+    border: none;
+    width: 300px;
+}
+option{
+    color: white;
+    background-color: black;
+}
+input{
+    display: block;
+    border: none;
+    background-color:rgb(0 0 0 / 42%);
+    padding: 5px 20px;
+    
+    margin: 10px 20px;
+    font-size: x-large;
+
+}
+#rate{
+    font-size: x-large;
+    color:white;
+    margin-left: 20px;
+    
+}
+button{
+    background: rgb(2,0,36);
+    border: 10px solid black;
+background: radial-gradient(circle, rgba(2,0,36,1) 12%, rgba(39,91,30,1) 74%, rgba(0,215,255,0.8715861344537815) 90%);
+    font-size: xx-large;
+    padding:5px 30px;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    border: 1px solid white;
+}
+.hr{
+    width: 90%;
+    border: 1px solid gray;
+}
+img{
+   margin-top: 20px;
+}
+.icons{
+    display: flex;
+    gap: 50px;
+}
+i{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 42%, rgba(39,91,30,1) 74%, rgba(0,215,255,0.8715861344537815) 90%);
+    font-size: xx-large;
+    padding: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.icons:nth-child(1){
+    background-color: antiquewhite;
+}
+#shuffle-icon{
+    transform: rotate(90deg);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter (Learn for earn)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utiliy.css">
+</head>
+<body class="flex justify-center align-center dir-column">
+  
+    <h1>Currency converter</h1>
+    <span>Developer &rarr; Moeez Rashid</span>
+    
+    <div class="from_to flex align-center dir-column space-around">
+        <input type="text" placeholder="Enter a value" id="from_value">
+        <div class="from combine">
+            <div class="country flex">
+                <img src="https://flagsapi.com/US/flat/64.png" alt="country Image">
+                <div class="cntry_name">
+                    <span id="from">from</span>
+                    <select name="country" id="from-country">
+                        <option selected value="USA">USD-United States Dollar</option>
+                           
+                          </select>                                                                     
+                </div>
+            </div>
+                <span id="rate" class="fromOutput">1 USD =278.58 PKR</span>
+        </div>
+        <div class="hr"></div>
+
+        <div class="to combine"> 
+            <div class="country flex ">
+                <img src="https://flagsapi.com/PK/flat/64.png" alt="country Image">
+                <div class="cntry_name">
+                    <span id="to">to</span>
+                    <select name="country" id="to-country">
+                     <option selected value="PKR">PKR-Pakistani Rupee</option>
+                        
+                       </select>
+                </div>
+            </div>
+         
+            <span id="rate" class="toOutput">1 PKR = 0.0036USD</span>
+    </div>
+    <div class="icons">
+        
+        <i id="shuffle-icon" class="fa-solid fa-right-left"></i>
+        <button>Convert</button>
+        <i class="fa-solid fa-rotate-left"></i>
+    </div>
+</div>
+   
+<script src="countries.js"></script>
+<script src="server.js"></script>
+</body>
+</html>
