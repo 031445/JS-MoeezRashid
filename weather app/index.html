@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know about Weather </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="weather flex">
+            <div class="location flex">
+                <input type="text" id="city" placeholder="Search the name of city">
+                <img id="search" src="transparency.png" alt="">
+
+            </div>
+
+            <div class="info flex">
+                <div class="status flex">
+                    <span id="temp">°C</span>
+                    <span id="stat"></span>
+                </div>
+                <img id="icon" src="" alt="Weather info">
+
+            </div>
+
+            <div class="otherInfo flex">
+
+                <div class="wind flex">
+                     <span>Wind Speed</span>
+                    <div class="wind_speed flex">
+                            <span id="speed">55 km/h</span>
+                            <img src="air-flow.png" alt="">
+                    </div>
+                </div>
+
+                <div class="humidity flex">
+                    <span>humidity level</span>
+                    <div class="humidity_value  flex">
+                            <span id="humi">55 km/h</span>
+                            <img src="humidity.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

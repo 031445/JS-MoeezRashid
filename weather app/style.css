@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #52abff;
+    background-image: linear-gradient(180deg, #52abff 25%, #ffe32c 100%);
+}
+
+.weather {
+    width: 40vw;
+    height: 82vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.238);
+    flex-direction: column;
+}
+
+.weather > div{
+    width: 100%;
+}
+
+.location{
+    height: 70px;
+    gap: 20px;
+}
+.location input{
+    border-radius: 50px;
+    color: black;
+    width: 60%;
+    font-size: large;
+    padding: 10px 15px;
+}
+#search{
+    width: 50px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+#search:hover{
+    cursor: pointer;
+}
+
+#search:active{
+    border: 2px solid black;  
+}
+.info{
+    height: 100%;
+    
+}
+.info img{
+    width: 200px;
+}
+.info span{
+    font-size: 40px;
+    font-weight: 600;
+}
+.status,.wind,.humidity{
+    flex-direction: column;
+}
+
+.otherInfo{
+    height: 100px;
+    justify-content: space-around;
+}
+.otherInfo div{
+    justify-content: space-around;
+}
+.otherInfo img{
+    width: 50px;
+}
+.otherInfo span{
+    font-size: 25px;
+    font-weight: 400;
+}
+.wind >span,.humidity>span{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 980px) {
+    .otherInfo span{
+        font-size: 15px;
+    }
+    .wind >span,.humidity>span{
+        font-size: 20px;
+    }
+    .info span{
+        font-size: 30px;
+    }
+  }
+
+  
+  
+@media screen and (max-width: 780px) {
+   .weather{
+    width: 100vw;
+    height: 100vh;
+   }
+   #search{
+    width:8%;
+   }
+  }
+
+  
+  
+@media screen and (max-width: 600px) {
+    #search{
+     width:10%;
+    }
+   }
+ 
+@media screen and (max-width: 500px) {
+    .location input{
+        width: 80%;
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+    
+   }
+   
+@media screen and (max-width: 300px) {
+    #search{
+     width:13%;
+    }
+    .location input{
+        width: 100%;
+    }
+   }
